@@ -1,0 +1,1 @@
+const string str1 = "hey
