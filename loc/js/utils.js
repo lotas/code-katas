@@ -7,7 +7,7 @@ function countLoc(source) {
   let errorUnterminatedString = false
   let errorUnterminatedComment = false
 
-  // simple STM flags
+  // simple fsm flags
   let insideMultilineComment = false
   let insideSinglelineComment = false
   let insideString = false

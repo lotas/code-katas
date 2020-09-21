@@ -41,6 +41,17 @@ loc-run-js:
 			node loc/js/loc.js $$i || (echo "Failed$$?"); \
 		done
 
-## LOC :: run tests
+## LOC :: run js tests
 loc-test-js:
+		@node loc/js/utils.test.js
+
+## LOC :: run go
+loc-run-go:
+		@for i in loc/data/*.cs; do \
+			echo "Testing $$i"; \
+			go run loc/go/main.go $$i || (echo "Failed$$?"); \
+		done
+
+## LOC :: run go tests
+loc-test-go:
 		@node loc/js/utils.test.js
