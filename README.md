@@ -6,6 +6,8 @@
 
 Test data is found in `./loc/data/*` files, to run loc calculation for all of them:
 
+### JS version
+
 ```sh
 make loc-run-js
 ```
@@ -14,6 +16,13 @@ To execute some tests for the calculation routine:
 
 ```sh
 make loc-test-js
+```
+
+### GO version
+
+```sh
+make loc-run-go
+make loc-test-go
 ```
 
 ## Bank OCR
